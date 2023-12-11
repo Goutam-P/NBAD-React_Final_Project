@@ -1,0 +1,92 @@
+
+.create-budget-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #ecf0f3;
+  border-radius: 20px;
+  box-shadow: -8px -8px 16px rgba(255, 255, 255, 0.7),
+              8px 8px 16px rgba(163, 177, 198, 0.5);
+  transition: transform 0.3s ease;
+  margin-top: -500px;
+  margin-bottom: -150px;
+}
+
+.create-budget-container:hover {
+  transform: translateY(-5px);
+}
+
+.input-group {
+  margin-bottom: 30px;
+}
+
+.input-group label {
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: block;
+  color: #333;
+}
+
+.input-group input,
+.input-group .react-datepicker__input-container input {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  background-color: inherit;
+  box-shadow: inset 8px 8px 8px #cbced1, 
+              inset -8px -8px 8px #ffffff;
+}
+
+.input-group input:focus,
+.input-group .react-datepicker__input-container input:focus {
+  outline: none;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #1a1a2e;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.create-button {
+  background-color: #8e44ad;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 15px 30px;
+  font-size: 18px;
+  box-shadow: 3px 3px 8px #b1b1b1, 
+              -3px -3px 8px #ffffff;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.create-button:hover {
+  background-color: #9b59b6;
+  transform: translateY(-2px);
+}
+
+.create-button:active {
+  background-color: #8e44ad;
+  box-shadow: inset 1px 1px 2px #b1b1b1, 
+              inset -1px -1px 2px #ffffff;
+}
+
+@media (max-width: 768px) {
+  .create-budget-container {
+    max-width: 90%;
+    margin-top: 20px;
+  }
+
+  .input-group label {
+    font-size: 16px;
+  }
+
+  .create-button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
